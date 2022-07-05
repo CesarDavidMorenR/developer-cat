@@ -209,6 +209,23 @@ blockquote:before {
   text-align: center;
 }
 
+#submit-contact{
+  border-radius: 50px;
+  border: 1px solid red;
+  color:white;
+  width: 70px;
+  height: 70px;
+  background-color: black;
+  margin-right: 110px;
+}
+
+#submit-contact:hover{
+  background-color: white;
+  color:black;
+  border-color:#a1c3ff;
+}
+
+
 /*  Media Querys*/
 
 @media (min-width: 1024px) {
@@ -279,4 +296,9 @@ blockquote:before {
     float: none;
     margin: 0 auto;
   }
+
+#submit-contact{
+ margin-right: 10px;
+}
+
 }
