@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+/* Standar Code  */
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: lightyellow;
+  height: 100%;
+}
+
+span.icon > img {
+  height: 32px;
+  background-color: transparent;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  background: linear-gradient(
+    to right,
+    #cf0b07,
+    #cfff4d,
+    #cbadff,
+    #94cfff,
+    #0ff5f1,
+    #c7ffca,
+    #e7ecb6,
+    #f2d7ab,
+    #ecaf9c
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h2 {
+  padding-bottom: 5px;
+}
+
+.header {
+  background-color: black;
+  color: white;
+  padding: 25px;
+}
+
+.footer {
+  background-color: #000000;
+  padding: 10px;
+  text-align: center;
+  clear: both;
+}
+
+/* .clearfix::after {
+    clear: both;
+} */
+
+.menu {
+  width: 25%;
+  height: 100%;
+  text-align: center;
+  background-color: lightblue;
+  float: left;
+}
+
+.content {
+  width: 75%;
+  padding: 15px;
+  border-left: 1px solid black;
+  background-color: #e7ecee;
+  height: min-content;
+  float: right;
+}
+
+.content-text {
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+blockquote {
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+  font-style: italic;
+  color: black;
+}
+
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+.content ul {
+  padding-left: 25px;
+}
+
+.menu li {
+  list-style-type: none;
+  padding: 15px;
+}
+
+.menu li:hover {
+  background-color: #a1c3ff;
+  padding: 15px;
+  font-size: 27px;
+}
+
+.lagata {
+  border: 1px solid black;
+  width: 200px;
+  vertical-align: top;
+  float: right;
+  animation: fadeIn 5s;
+}
+
+.lagata2 {
+  border: 1px solid black;
+  width: 200px;
+  animation: fadeIn 5s;
+}
+
+.icon {
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+  margin-bottom: 4px;
+  background-color: red;
+}
+
+#contact_form {
+  display: block;
+  padding-top: 20px;
+}
+
+.menu-icons {
+  width: 30px;
+}
+
+/*  Code of David  */
+
+.title-header {
+  text-align: center;
+}
+
+.footer__link {
+  color: white;
+}
+
+.font-awesome {
+  font-size: 17px;
+}
+
+.menu li:hover .font-awesome {
+  font-size: 21px;
+  color: #fafafa;
+}
+
+.main-parent {
+  max-width: 1025px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.menu-ul {
+  margin-top: 60%;
+}
+
+.cat-shield {
+  margin-top: 50px;
+  font-size: 77px;
+}
+
+/*  Media Querys*/
+
+@media (min-width: 1024px) {
+  span.icon {
+    display: none;
+  }
+  span.menu-text {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 1024px) {
+  span.icon {
+    display: inline-block;
+  }
+  span.menu-text {
+    display: none;
+  }
+  .content-text ul {
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+  .menu {
+    width: 15%;
+    height: 100%;
+    text-align: center;
+    background-color: lightblue;
+    float: left;
+  }
+
+  .content {
+    width: 85%;
+    padding: 15px;
+    border-left: 1px solid black;
+    background-color: #e7ecee;
+    height: 100%;
+    float: right;
+    overflow: scroll;
+  }
+}
+
+@media (max-width: 812px) {
+  body {
+    color: navy;
+    text-align: center;
+  }
+  h1 {
+    background: linear-gradient(
+      to right,
+      #ef5350,
+      #f48fb1,
+      #7e57c2,
+      #2196f3,
+      #26c6da,
+      #43a047,
+      #eeff41,
+      #f9a825,
+      #ff5722
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .lagata {
+    border: 1px solid black;
+    width: 200px;
+    animation: fadeIn 5s;
+    display: block;
+    float: none;
+    margin: 0 auto;
+  }
+}
