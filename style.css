@@ -87,10 +87,10 @@ h2 {
 
 .content {
   width: 75%;
+  height: 100%;
   padding: 15px;
   border-left: 1px solid black;
   background-color: #e7ecee;
-  height: 100%;
   float: right;
 }
 
@@ -144,6 +144,7 @@ blockquote:before {
   border: 1px solid black;
   width: 200px;
   animation: fadeIn 5s;
+  padding: 5px;
 }
 
 .icon {
@@ -216,10 +217,11 @@ blockquote:before {
   width: 70px;
   height: 70px;
   background-color: black;
+  margin-top: 20px;
 }
 
 #submit-contact:hover {
-  background-color: #ffffff;
+  background-color: white;
   color: black;
   border-color: #a1c3ff;
 }
@@ -305,5 +307,26 @@ label {
 
   .last-form {
     margin-right: 0;
+  }
+}
+
+@media print {
+  #non-printable-menu {
+    display: none;
+  }
+  #non-printable-footer {
+    display: none;
+  }
+  #printable-content {
+    display: inline-inline;
+    width: 100%;
+    text-align: left;
+    color: black;
+  }
+  .lagata {
+    border: 1px solid black;
+    width: 200px;
+    display: block;
+    float: right;
   }
 }
