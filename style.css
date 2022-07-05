@@ -209,22 +209,28 @@ blockquote:before {
   text-align: center;
 }
 
-#submit-contact{
+#submit-contact {
   border-radius: 50px;
   border: 1px solid red;
-  color:white;
+  color: white;
   width: 70px;
   height: 70px;
   background-color: black;
-  margin-right: 110px;
 }
 
-#submit-contact:hover{
-  background-color: white;
-  color:black;
-  border-color:#a1c3ff;
+#submit-contact:hover {
+  background-color: #ffffff;
+  color: black;
+  border-color: #a1c3ff;
 }
 
+label {
+  display: block;
+}
+
+.last-form {
+  margin-right: 200px;
+}
 
 /*  Media Querys*/
 
@@ -297,8 +303,7 @@ blockquote:before {
     margin: 0 auto;
   }
 
-#submit-contact{
- margin-right: 10px;
-}
-
+  .last-form {
+    margin-right: 0;
+  }
 }
