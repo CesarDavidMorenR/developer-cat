@@ -37,15 +37,15 @@ span.icon > img {
 h1 {
   background: linear-gradient(
     to right,
-    #cf0b07,
-    #cfff4d,
-    #cbadff,
-    #94cfff,
-    #0ff5f1,
-    #c7ffca,
-    #e7ecb6,
-    #f2d7ab,
-    #ecaf9c
+    #1e14e7,
+    #2afff8,
+    #6312ed,
+    #e5e5e5,
+    #03eae2,
+    #12e41c,
+    #fe06c8e2,
+    #dd19dd,
+    #d827d8
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -87,10 +87,10 @@ h2 {
 
 .content {
   width: 75%;
+  height: 100%;
   padding: 15px;
   border-left: 1px solid black;
   background-color: #e7ecee;
-  height: min-content;
   float: right;
 }
 
@@ -144,6 +144,7 @@ blockquote:before {
   border: 1px solid black;
   width: 200px;
   animation: fadeIn 5s;
+  padding: 5px;
 }
 
 .icon {
@@ -195,6 +196,42 @@ blockquote:before {
 .cat-shield {
   margin-top: 50px;
   font-size: 77px;
+}
+
+.cat-shield:hover {
+  color: white;
+}
+
+.tittle-form {
+  text-align: center;
+}
+
+.form-fill {
+  text-align: center;
+}
+
+#submit-contact {
+  border-radius: 50px;
+  border: 1px solid red;
+  color: white;
+  width: 70px;
+  height: 70px;
+  background-color: black;
+  margin-top: 20px;
+}
+
+#submit-contact:hover {
+  background-color: white;
+  color: black;
+  border-color: #a1c3ff;
+}
+
+label {
+  display: block;
+}
+
+.last-form {
+  margin-right: 200px;
 }
 
 /*  Media Querys*/
@@ -266,5 +303,30 @@ blockquote:before {
     display: block;
     float: none;
     margin: 0 auto;
+  }
+
+  .last-form {
+    margin-right: 0;
+  }
+}
+
+@media print {
+  #non-printable-menu {
+    display: none;
+  }
+  #non-printable-footer {
+    display: none;
+  }
+  #printable-content {
+    display: inline-inline;
+    width: 100%;
+    text-align: left;
+    color: black;
+  }
+  .lagata {
+    border: 1px solid black;
+    width: 200px;
+    display: block;
+    float: right;
   }
 }
