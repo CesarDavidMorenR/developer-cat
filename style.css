@@ -37,15 +37,15 @@ span.icon > img {
 h1 {
   background: linear-gradient(
     to right,
-    #cf0b07,
-    #cfff4d,
-    #cbadff,
-    #94cfff,
-    #0ff5f1,
-    #c7ffca,
-    #e7ecb6,
-    #f2d7ab,
-    #ecaf9c
+    #1e14e7,
+    #2afff8,
+    #6312ed,
+    #e5e5e5,
+    #03eae2,
+    #12e41c,
+    #fe06c8e2,
+    #dd19dd,
+    #d827d8
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -90,7 +90,7 @@ h2 {
   padding: 15px;
   border-left: 1px solid black;
   background-color: #e7ecee;
-  height: min-content;
+  height: 100%;
   float: right;
 }
 
@@ -195,6 +195,18 @@ blockquote:before {
 .cat-shield {
   margin-top: 50px;
   font-size: 77px;
+}
+
+.cat-shield:hover {
+  color: white;
+}
+
+.tittle-form {
+  text-align: center;
+}
+
+.form-fill {
+  text-align: center;
 }
 
 /*  Media Querys*/
